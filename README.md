@@ -73,6 +73,12 @@ src/web/        inline HTML/CSS/JS for the local UI
 scripts/        build, SEA packing, PE patching, icon/version resources
 ```
 
+## Code signing
+
+Free code signing provided by [SignPath.io](https://signpath.io/), certificate by
+[SignPath Foundation](https://signpath.org/). Release binaries are signed through the
+workflow in `.github/workflows/sign.yml`.
+
 ## License
 
 MIT
