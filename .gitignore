@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dist-desktop/
+.tools/
+pack/
+preview.html
+package-lock.json
+*.log
+*.exe
+*.cer
+*.pfx
+.env

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SignPath artifact configuration.
+
+  It tells SignPath which file inside the uploaded artifact to sign. Sign only the
+  exe itself: signing a zip or a folder produces a signature nobody can verify.
+-->
+<artifact-configuration xmlns="http://signpath.io/artifact-configuration/v1">
+  <zip-file>
+    <pe-file path="aac.exe">
+      <authenticode-sign />
+    </pe-file>
+  </zip-file>
+</artifact-configuration>

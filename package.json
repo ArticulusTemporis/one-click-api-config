@@ -1,0 +1,23 @@
+{
+  "name": "agent-api-config",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "One profile -> many AI clients. Declarative provider config + web UI.",
+  "bin": {
+    "aac": "bin/aac.js"
+  },
+  "scripts": {
+    "serve": "node bin/aac.js serve",
+    "test": "node --test",
+    "build:bundle": "esbuild bin/aac.js --bundle --platform=node --format=cjs --outfile=dist/bundle.cjs",
+    "build:sea": "node --experimental-sea-config dist/sea-config.json"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "rcedit": "^4.0.1"
+  }
+}
